@@ -434,11 +434,9 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .title-gradient {
-  background: var(--gradient-primary);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  /* Animation removed */
+  color: var(--color-primary);
+  font-weight: 900;
+  /* Removed gradient for better visibility - using solid dark color */
 }
 
 .hero__subtitle {
@@ -656,12 +654,10 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .title-accent {
-  background: var(--gradient-secondary);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--color-primary);
   display: block;
   font-weight: 700;
+  /* Removed gradient for better visibility */
 }
 
 .about__description {
@@ -985,10 +981,7 @@ p, h1, h2, h3, h4, h5, h6 {
   font-weight: 900;
   color: var(--color-primary);
   margin-bottom: var(--space-2);
-  background: var(--gradient-primary);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  /* Removed gradient for better visibility - using solid color */
 }
 
 .metric__label {
@@ -1107,33 +1100,7 @@ p, h1, h2, h3, h4, h5, h6 {
   color: var(--color-white);
 }
 
-.work-arrow {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 80px;
-  height: 80px;
-  background: var(--gradient-primary);
-  border-radius: 50%;
-  color: var(--color-white);
-  box-shadow: 0 4px 20px rgba(30, 41, 59, 0.3);
-  margin: var(--space-4) auto;
-  flex-shrink: 0;
-}
-
-@media (max-width: 768px) {
-  .work-arrow {
-    transform: rotate(90deg);
-    width: 60px;
-    height: 60px;
-    margin: var(--space-6) auto;
-  }
-  
-  .work-arrow svg {
-    width: 24px;
-    height: 24px;
-  }
-}
+/* Removed work arrows for cleaner before/after presentation */
 
 @keyframes arrowPulse {
   0%, 100% {
