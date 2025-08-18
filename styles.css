@@ -216,7 +216,7 @@ p, h1, h2, h3, h4, h5, h6 {
   transform: translateY(-4px) scale(1.02);
   box-shadow: 0 20px 50px -10px rgba(37, 99, 235, 0.6), 
               0 0 30px rgba(5, 150, 105, 0.3);
-  animation: buttonPulse 1.5s infinite;
+  /* Animation removed */
 }
 
 .btn--primary:hover::before {
@@ -364,7 +364,7 @@ p, h1, h2, h3, h4, h5, h6 {
     radial-gradient(circle at 20% 80%, rgba(37, 99, 235, 0.3) 0%, transparent 50%),
     radial-gradient(circle at 80% 20%, rgba(5, 150, 105, 0.3) 0%, transparent 50%),
     radial-gradient(circle at 40% 40%, rgba(8, 145, 178, 0.2) 0%, transparent 50%);
-  animation: gradientMove 8s ease-in-out infinite;
+  /* Animation removed for clean design */
 }
 
 .hero::after {
@@ -411,7 +411,7 @@ p, h1, h2, h3, h4, h5, h6 {
   font-size: var(--text-sm);
   font-weight: 600;
   margin-bottom: var(--space-6);
-  animation: badgePulse 2s ease-in-out infinite;
+  /* Animation removed */
 }
 
 .hero__content {
@@ -438,7 +438,7 @@ p, h1, h2, h3, h4, h5, h6 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  animation: titleShine 3s ease-in-out infinite;
+  /* Animation removed */
 }
 
 .hero__subtitle {
@@ -537,7 +537,7 @@ p, h1, h2, h3, h4, h5, h6 {
     0 25px 50px -12px rgba(37, 99, 235, 0.25),
     0 0 0 1px rgba(255, 255, 255, 0.1);
   transition: all var(--transition-smooth);
-  animation: heroImageFloat 6s ease-in-out infinite;
+  /* Animation removed */
   position: relative;
   z-index: 2;
 }
@@ -559,7 +559,7 @@ p, h1, h2, h3, h4, h5, h6 {
   background: linear-gradient(45deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
   border: 2px solid rgba(255, 255, 255, 0.2);
   border-radius: 12px;
-  animation: frameFloat 4s ease-in-out infinite;
+  /* Animation removed */
   z-index: 3;
   backdrop-filter: blur(10px);
 }
@@ -583,7 +583,7 @@ p, h1, h2, h3, h4, h5, h6 {
   height: 30%;
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.3) 0%, transparent 100%);
   border-radius: 4px;
-  animation: reflectionShine 3s ease-in-out infinite;
+  /* Animation removed */
 }
 
 @keyframes heroImageFloat {
@@ -750,7 +750,7 @@ p, h1, h2, h3, h4, h5, h6 {
     0 20px 40px -12px rgba(8, 145, 178, 0.3),
     0 0 0 1px rgba(255, 255, 255, 0.1);
   transition: all var(--transition-smooth);
-  animation: aboutImagePulse 4s ease-in-out infinite;
+  /* Animation removed */
   position: relative;
   z-index: 2;
 }
@@ -879,7 +879,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .service-card:hover .service-card__icon {
   transform: scale(1.1);
-  animation: iconBounce 0.6s var(--animation-bounce);
+  /* Animation removed */
 }
 
 @keyframes iconBounce {
@@ -1000,76 +1000,74 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .work-gallery {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: var(--space-12);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-16);
   margin-bottom: var(--space-16);
 }
 
-@media (min-width: 768px) {
-  .work-gallery {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (min-width: 1024px) {
-  .work-gallery {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
+/* Removed grid layout - using single column flex for better image visibility */
 
 .work-item {
   background: var(--color-white);
-  border-radius: 20px;
+  border-radius: 16px;
   padding: var(--space-8);
-  box-shadow: var(--shadow-lg);
-  transition: all var(--transition-smooth);
-  border: 1px solid rgba(37, 99, 235, 0.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: all var(--transition-normal);
+  border: 1px solid var(--color-gray-200);
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .work-item:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 25px 50px -12px rgba(37, 99, 235, 0.25);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
 }
 
 .work-before-after {
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
-  align-items: center;
-  gap: var(--space-6);
-  margin-bottom: var(--space-8);
-  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+  margin-bottom: var(--space-12);
+  max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .work-before-after {
-    grid-template-columns: 1fr;
-    gap: var(--space-4);
-    text-align: center;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--space-6);
   }
 }
 
 .work-image {
   position: relative;
-  border-radius: 16px;
+  border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
   transition: all var(--transition-normal);
+  flex: 1;
+  min-width: 0;
 }
 
 .work-image img {
   width: 100%;
-  height: 300px;
+  height: 400px;
   object-fit: cover;
-  transition: all var(--transition-normal);
   display: block;
 }
 
 @media (min-width: 768px) {
   .work-image img {
-    height: 350px;
+    height: 450px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .work-image img {
+    height: 500px;
   }
 }
 
@@ -1113,26 +1111,27 @@ p, h1, h2, h3, h4, h5, h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 60px;
-  height: 60px;
-  background: linear-gradient(135deg, #1d4ed8, #0891b2);
+  width: 80px;
+  height: 80px;
+  background: var(--gradient-primary);
   border-radius: 50%;
   color: var(--color-white);
-  box-shadow: 0 4px 16px rgba(29, 78, 216, 0.3);
-  /* Removed distracting pulse animation for cleaner design */
-  transition: all var(--transition-normal);
+  box-shadow: 0 4px 20px rgba(30, 41, 59, 0.3);
+  margin: var(--space-4) auto;
+  flex-shrink: 0;
 }
 
 @media (max-width: 768px) {
   .work-arrow {
     transform: rotate(90deg);
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
+    margin: var(--space-6) auto;
   }
   
   .work-arrow svg {
-    width: 30px;
-    height: 30px;
+    width: 24px;
+    height: 24px;
   }
 }
 
@@ -1232,7 +1231,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .work-item {
-  animation: workItemSlideIn 0.8s ease-out;
+  /* Animation removed */
 }
 
 .work-item:nth-child(1) { animation-delay: 0.1s; opacity: 0; animation-fill-mode: forwards; }
