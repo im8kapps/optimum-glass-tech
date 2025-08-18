@@ -481,12 +481,12 @@ function trackFormSubmission() {
     }
 }
 
-// Emergency contact tracking
+// Contact tracking
 function trackEmergencyCall() {
     if (typeof gtag === 'function') {
-        gtag('event', 'emergency_contact', {
+        gtag('event', 'contact_click', {
             event_category: 'conversion',
-            event_label: 'phone_call_emergency'
+            event_label: 'phone_call'
         });
     }
 }
@@ -630,99 +630,4 @@ window.addEventListener('load', function() {
     }
 });
 
-// Emergency service detection and priority handling
-function handleEmergencyService() {
-    const currentHour = new Date().getHours();
-    const isAfterHours = currentHour < 7 || currentHour > 18;
-    
-    if (isAfterHours) {
-        // Show emergency contact information more prominently
-        const emergencyBanner = document.createElement('div');
-        emergencyBanner.className = 'emergency-banner';
-        emergencyBanner.innerHTML = `
-            <div class="emergency-content">
-                <span class="emergency-icon">🚨</span>
-                <span class="emergency-text">Emergency Glass Service Available 24/7</span>
-                <a href="tel:+14697945717" class="emergency-phone" onclick="trackEmergencyCall()">(469) 794-5717</a>
-            </div>
-        `;
-        
-        // Insert after header
-        const header = document.querySelector('.header');
-        if (header) {
-            header.insertAdjacentElement('afterend', emergencyBanner);
-            
-            // Add emergency banner styles
-            const style = document.createElement('style');
-            style.textContent = `
-                .emergency-banner {
-                    background: linear-gradient(90deg, #dc2626, #991b1b);
-                    color: white;
-                    padding: 12px;
-                    text-align: center;
-                    position: fixed;
-                    top: 80px;
-                    left: 0;
-                    right: 0;
-                    z-index: 999;
-                    box-shadow: 0 4px 12px rgba(220, 38, 38, 0.3);
-                    animation: emergencyPulse 2s ease-in-out infinite;
-                }
-                
-                .emergency-content {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    gap: 12px;
-                    flex-wrap: wrap;
-                }
-                
-                .emergency-icon {
-                    font-size: 1.2rem;
-                    animation: emergencyBlink 1s ease-in-out infinite;
-                }
-                
-                .emergency-phone {
-                    color: white;
-                    font-weight: 700;
-                    text-decoration: none;
-                    padding: 4px 12px;
-                    background: rgba(255, 255, 255, 0.2);
-                    border-radius: 20px;
-                    transition: all 0.3s ease;
-                }
-                
-                .emergency-phone:hover {
-                    background: rgba(255, 255, 255, 0.3);
-                    transform: scale(1.05);
-                }
-                
-                @keyframes emergencyPulse {
-                    0%, 100% { opacity: 1; }
-                    50% { opacity: 0.9; }
-                }
-                
-                @keyframes emergencyBlink {
-                    0%, 100% { opacity: 1; }
-                    50% { opacity: 0.5; }
-                }
-                
-                @media (max-width: 768px) {
-                    .emergency-content {
-                        font-size: 0.9rem;
-                    }
-                }
-            `;
-            document.head.appendChild(style);
-            
-            // Adjust hero padding to account for emergency banner
-            const hero = document.querySelector('.hero');
-            if (hero) {
-                hero.style.paddingTop = 'calc(80px + 60px + var(--space-16))';
-            }
-        }
-    }
-}
-
-// Initialize emergency service handling
-handleEmergencyService();
+// Removed emergency banner functionality for cleaner, more professional design
