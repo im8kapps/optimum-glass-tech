@@ -3,560 +3,424 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Professional glass repair and replacement services in Indianapolis. Optimum Glass specializes in auto glass repair, residential window replacement, and commercial glass services. 10+ years of experience with quality work at the best prices.">
-    <meta name="keywords" content="glass repair Indianapolis, window replacement Indianapolis, auto glass repair, residential glass, commercial glass services">
-    <meta name="author" content="Optimum Glass">
-    
-    <!-- Open Graph / Facebook -->
+    <meta name="description" content="Auto windshield replacement, rock chip repair, ADAS calibration, residential window glass replacement, patio door glass, and commercial storefront glass in Indianapolis. Mobile service, safety-first installs, and insurance billing help from Optimum Glass Tech.">
+    <meta name="keywords" content="windshield replacement Indianapolis, auto glass repair near me, mobile auto glass, residential window glass replacement, home window repair, patio door glass, commercial storefront glass, ADAS calibration, glass repair Indianapolis, window replacement Indianapolis">
+    <meta name="author" content="Optimum Glass Tech">
+
     <meta property="og:type" content="website">
+    <meta property="og:title" content="Optimum Glass | Auto & Home Glass Repair Indianapolis">
+    <meta property="og:description" content="Auto glass, home window glass, and commercial storefront glass replacement with mobile service and insurance help across Indianapolis.">
     <meta property="og:url" content="https://optimumglasstech.com/">
-    <meta property="og:title" content="Optimum Glass - Professional Glass Services in Indianapolis">
-    <meta property="og:description" content="Quality glass repair and replacement services for auto, residential, and commercial needs. 10+ years of experience serving Indianapolis with satisfaction guaranteed.">
-    
-    <!-- Twitter -->
+
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://optimumglasstech.com/">
-    <meta property="twitter:title" content="Optimum Glass - Professional Glass Services in Indianapolis">
-    <meta property="twitter:description" content="Quality glass repair and replacement services for auto, residential, and commercial needs. 10+ years of experience serving Indianapolis with satisfaction guaranteed.">
-    
-    <title>Optimum Glass - Professional Glass Services in Indianapolis</title>
-    
-    <!-- Preload critical resources -->
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;600;700;800;900&display=swap" as="style">
-    <link rel="preload" href="styles.css" as="style">
-    
-    <!-- Professional Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    
-    <!-- Styles -->
+    <meta property="twitter:title" content="Optimum Glass | Auto & Home Glass Repair Indianapolis">
+    <meta property="twitter:description" content="Auto glass, home glass, and commercial storefront glass replacement across Indianapolis with mobile service and insurance help.">
+
+    <title>Optimum Glass | Auto & Home Glass Repair Indianapolis</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles.css">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🪟</text></svg>">
-    
-    <!-- Web App Manifest -->
     <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🪟</text></svg>">
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <nav class="nav">
-            <div class="nav__brand">
-                <img src="assets/optimum-glass-logo.png" alt="Optimum Glass Tech - Optimize Your View" class="nav__logo-img">
-                <h1 class="nav__logo">Optimum Glass Tech</h1>
+    <header class="topbar">
+        <div class="container topbar__inner">
+            <div class="topbar__left">
+                <span class="pulse"></span>
+                <span>Same-day mobile glass repair across Greater Indianapolis</span>
             </div>
-            <div class="nav__menu">
-                <a href="#about" class="nav__link">About</a>
-                <a href="#services" class="nav__link">Services</a>
-                <a href="#work" class="nav__link">Our Work</a>
-                <a href="#contact" class="nav__link">Contact</a>
+            <div class="topbar__right">
+                <a href="tel:+14697945717">Call (469) 794-5717</a>
+                <span class="divider">|</span>
+                <a href="mailto:info@optimumglasstech.com">info@optimumglasstech.com</a>
             </div>
-        </nav>
+        </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero" id="hero">
-        <!-- Clean Professional Background -->
-        
-        <div class="hero__container">
-            <div class="hero__content">
-                <div class="hero__badge">Professional Glass Services</div>
-                <h1 class="hero__title">
-                    <span class="title-gradient">Precision Glass Solutions</span><br>
-                    for Indianapolis
-                </h1>
-                <p class="hero__subtitle">Professional glass repair and replacement. Quality work, fair pricing, reliable service. Serving auto, residential, and commercial clients with 10+ years of proven experience.</p>
-                <div class="hero__features">
-                    <div class="feature-item">
-                        <span class="icon">🚗</span>
-                        <span>Auto Glass</span>
-                    </div>
-                    <div class="feature-item">
-                        <span class="icon">🏠</span>
-                        <span>Residential</span>
-                    </div>
-                    <div class="feature-item">
-                        <span class="icon">🏢</span>
-                        <span>Commercial</span>
-                    </div>
-                </div>
-                <div class="hero__cta-group">
-                    <button class="hero__cta btn btn--primary" onclick="openQuoteModal()">
-                        <span>Get Free Estimate</span>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
-                        </svg>
-                    </button>
-                    <div class="hero__location">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
-                        </svg>
-                        <span>Serving Indianapolis & Surrounding Areas</span>
-                    </div>
+    <nav class="nav">
+        <div class="container nav__inner">
+            <div class="nav__brand">
+                <img src="assets/optimum-glass-logo.png" alt="Optimum Glass Tech logo" class="nav__logo-img">
+                <div>
+                    <div class="nav__title">Optimum Glass Tech</div>
+                    <div class="nav__subtitle">Auto + Home Glass</div>
                 </div>
             </div>
-            <div class="hero__image">
-                <div class="image-wrapper">
-                    <img src="assets/windshield-after-3.jpg" alt="Professional windshield installation - crystal clear glass replacement by Optimum Glass Indianapolis" class="hero__image-photo" loading="eager">
-                    <div class="glass-frame">
-                        <div class="frame-inner"></div>
-                        <div class="frame-reflection"></div>
-                    </div>
-                </div>
+            <div class="nav__links">
+                <a href="#services">Services</a>
+                <a href="#home-glass">Home</a>
+                <a href="#industry">Industry</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#quote">Quote</a>
+            </div>
+            <div class="nav__cta">
+                <button class="btn btn--primary" onclick="openQuoteModal()">Get estimate</button>
             </div>
         </div>
-    </section>
+    </nav>
 
-    <!-- About Section -->
-    <section class="about" id="about">
-        <div class="container">
-            <div class="about__content">
-                <div class="about__text">
-                    <div class="section-badge">🔧 Our Expertise</div>
-                    <h2 class="about__title">
-                        About Optimum Glass Tech<br>
-                        <span class="title-accent">Your Trusted Glass Professionals</span>
-                    </h2>
-                    <p class="about__description">
-                        🪟 <strong>Optimize your view with quality work at the best price</strong> – With over 10 years of experience in glass repair and replacement, 
-                        Optimum Glass Tech is a family business dedicated to providing exceptional service for all your glass needs. 
-                        We aren't satisfied until our customers are satisfied.
-                    </p>
-                    <div class="about__features">
-                        <div class="feature-point">
-                            <span class="feature-icon">🚗</span>
-                            <span>Expert auto glass repair & replacement</span>
-                        </div>
-                        <div class="feature-point">
-                            <span class="feature-icon">🏠</span>
-                            <span>Residential window installation</span>
-                        </div>
-                        <div class="feature-point">
-                            <span class="feature-icon">🏢</span>
-                            <span>Commercial glass solutions</span>
-                        </div>
+    <main>
+        <section class="hero" id="hero">
+            <div class="container hero__grid">
+                <div class="hero__content">
+                    <div class="eyebrow">Certified technicians • Insurance-friendly • ADAS ready</div>
+                    <h1>Safe, fast auto & home glass replacement in Indianapolis</h1>
+                    <p class="lede">Mobile windshield repair, calibrated replacements, residential window glass, sliding door glass, and commercial storefront solutions. Family owned, safety obsessed, and backed by a lifetime workmanship guarantee.</p>
+                    <div class="chip-row">
+                        <span class="chip">Mobile service that comes to you</span>
+                        <span class="chip">OEM-quality glass & adhesives</span>
+                        <span class="chip">Help with insurance claims</span>
                     </div>
-                    <div class="about__highlights">
-                        <div class="highlight">
-                            <span class="highlight__number">10+</span>
-                            <span class="highlight__text">Years Experience</span>
+                    <div class="hero__actions">
+                        <button class="btn btn--primary" onclick="openQuoteModal()">Schedule same-day service</button>
+                        <a class="btn btn--ghost" href="tel:+14697945717">Talk to a tech</a>
+                    </div>
+                    <div class="hero__meta">
+                        <div class="meta-card">
+                            <strong>10+ years</strong>
+                            <span>Certified experience</span>
                         </div>
-                        <div class="highlight">
-                            <span class="highlight__number">1000+</span>
-                            <span class="highlight__text">Happy Customers</span>
+                        <div class="meta-card">
+                            <strong>Auto • Home • Commercial</strong>
+                            <span>Windshields, door glass, double-pane, storefronts</span>
                         </div>
-                        <div class="highlight">
-                            <span class="highlight__number">100%</span>
-                            <span class="highlight__text">Satisfaction Guarantee</span>
+                        <div class="meta-card">
+                            <strong>Indianapolis & suburbs</strong>
+                            <span>Carmel, Fishers, Noblesville, Greenwood</span>
                         </div>
                     </div>
                 </div>
-                <div class="about__image">
-                    <div class="image-frame">
-                        <img src="assets/team-member-hero.jpg" alt="Optimum Glass team member - experienced professional with 10+ years in glass services" class="about__image-photo" loading="lazy">
-                        <div class="tools-pattern">
-                            <div class="tool"></div>
-                            <div class="tool"></div>
-                            <div class="tool"></div>
-                        </div>
+                <div class="hero__media">
+                    <div class="hero__image-box">
+                        <img src="assets/hero_photo.JPEG" alt="Optimum Glass technician working on a glass installation" loading="eager">
+                        <div class="media__flag">Mobile & In-Shop</div>
+                        <div class="media__tag">Lifetime workmanship guarantee</div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Services Section -->
-    <section class="services" id="services">
-        <div class="container">
-            <div class="section-badge">🔨 Our Services</div>
-            <h2 class="services__title">
-                Professional Glass Services<br>
-                <span class="title-gradient">For Every Need</span>
-            </h2>
-            <div class="services__grid">
-                <div class="service-card">
-                    <div class="service-card__icon">
-                        🚗
-                    </div>
-                    <h3 class="service-card__title">Auto Glass Services</h3>
-                    <p class="service-card__description">
-                        Complete auto glass repair and replacement services. From windshield chips to full replacements, 
-                        we get you back on the road safely and quickly.
-                    </p>
-                    <div class="service-features">
-                        <span>🔧 Windshield repair</span>
-                        <span>🪟 Window replacement</span>
-                        <span>📱 Mobile service</span>
+        <section class="confidence-strip">
+            <div class="container confidence-strip__inner">
+                <div class="confidence-item">NGA certified technicians</div>
+                <div class="confidence-item">ADAS calibration ready</div>
+                <div class="confidence-item">Insurance billing assistance</div>
+                <div class="confidence-item">Emergency board-up available</div>
+            </div>
+        </section>
+
+        <section class="services" id="services">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-eyebrow">Services for every pane</p>
+                    <h2>Auto, home, and commercial glass—done right the first time.</h2>
+                </div>
+                <div class="service-grid">
+                    <article class="service-card">
+                        <div class="service-card__image">
+                            <img src="assets/IMG_4514.jpeg" alt="Optimum Glass auto glass replacement in progress" loading="lazy">
+                        </div>
+                        <div class="service-card__body">
+                            <h3>Auto Glass</h3>
+                            <p>Windshield replacement, rock chip repair, back glass, door glass, semi and fleet glass, and recalibration-ready installs.</p>
+                            <ul class="tag-list">
+                                <li>Windshield crack & chip repair</li>
+                                <li>ADAS calibration coordination</li>
+                                <li>OEM-quality materials</li>
+                                <li>Mobile service at your location</li>
+                            </ul>
+                            <button class="text-link" onclick="openQuoteModal('Auto Glass Repair')">Schedule auto glass</button>
+                        </div>
+                    </article>
+
+                    <article class="service-card" id="home-glass">
+                        <div class="service-card__image">
+                            <img src="assets/IMG_5342.jpeg" alt="Residential window glass replacement by Optimum Glass" loading="lazy">
+                        </div>
+                        <div class="service-card__body">
+                            <h3>Residential Glass</h3>
+                            <p>Window glass replacement for homes: double-pane IGUs, foggy glass, sliding patio doors, safety glass, and custom cuts.</p>
+                            <ul class="tag-list">
+                                <li>Insulated & Low-E glass replacements</li>
+                                <li>Patio & french door glass</li>
+                                <li>Safety, tempered, and laminated glass</li>
+                                <li>Draft/condensation fixes</li>
+                            </ul>
+                            <button class="text-link" onclick="openQuoteModal('Residential Windows')">Book home glass</button>
+                        </div>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-card__image">
+                            <img src="assets/IMG_4515.jpeg" alt="Commercial glass service and storefront repair" loading="lazy">
+                        </div>
+                        <div class="service-card__body">
+                            <h3>Commercial & Specialty</h3>
+                            <p>Storefront glass repair, door glass, interior office glass, retrofit safety glass, and quick-turn board-ups.</p>
+                            <ul class="tag-list">
+                                <li>Storefront & door lites</li>
+                                <li>Tempered & laminated options</li>
+                                <li>Board-up & fast turnaround</li>
+                                <li>Custom mirrors & partitions</li>
+                            </ul>
+                            <button class="text-link" onclick="openQuoteModal('Commercial Glass')">Request commercial service</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="home-highlight">
+            <div class="container home-highlight__grid">
+                <div class="home-copy">
+                    <p class="section-eyebrow">Home glass matters</p>
+                    <h2>Not just auto glass—we protect your house from drafts, leaks, and broken panes.</h2>
+                    <p>Optimum Glass Tech handles foggy insulated windows, cracked glass panes, patio door glass, shower glass, custom shelves, and safety glass upgrades. Clean installs, careful masking, and respect for your home.</p>
+                    <div class="chip-row">
+                        <span class="chip">Energy-efficient Low-E glass</span>
+                        <span class="chip">Tempered & laminated safety</span>
+                        <span class="chip">Precision measurements</span>
                     </div>
                 </div>
-                <div class="service-card">
-                    <div class="service-card__icon">
-                        🏠
+                <div class="home-aside">
+                    <div class="stat-card">
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-label">Emergency board-up</span>
                     </div>
-                    <h3 class="service-card__title">Residential Glass</h3>
-                    <p class="service-card__description">
-                        Home window replacement and repair services. Energy-efficient solutions 
-                        that enhance your home's comfort and curb appeal.
-                    </p>
-                    <div class="service-features">
-                        <span>🪟 Window replacement</span>
-                        <span>🔒 Security glass</span>
-                        <span>⚡ Energy efficient</span>
+                    <div class="stat-card">
+                        <span class="stat-number">Next-day</span>
+                        <span class="stat-label">Most residential glass orders</span>
                     </div>
-                </div>
-                <div class="service-card">
-                    <div class="service-card__icon">
-                        🏢
-                    </div>
-                    <h3 class="service-card__title">Commercial Glass</h3>
-                    <p class="service-card__description">
-                        Professional commercial glass installation and repair. Storefront windows, 
-                        office glass, and specialty commercial applications.
-                    </p>
-                    <div class="service-features">
-                        <span>🏪 Storefront glass</span>
-                        <span>🏢 Office windows</span>
-                        <span>🔧 Emergency repair</span>
+                    <div class="stat-card">
+                        <span class="stat-number">Lifetime</span>
+                        <span class="stat-label">Workmanship guarantee</span>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Our Work Section -->
-    <section class="our-work" id="work">
-        <div class="container">
-            <div class="section-badge">✨ Quality Showcase</div>
-            <h2 class="our-work__title">
-                Witness Our<br>
-                <span class="title-gradient">Expert Craftsmanship</span>
-            </h2>
-            <p class="our-work__subtitle">Every project showcases our commitment to excellence - transforming damaged glass into perfect clarity with professional precision and care</p>
-            
-            <div class="quality-metrics">
-                <div class="metric">
-                    <div class="metric__number">10+</div>
-                    <div class="metric__label">Years Experience</div>
+        <section class="industry" id="industry">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-eyebrow">Glass repair & replacement keywords</p>
+                    <h2>What we service every day in Indianapolis.</h2>
+                    <p class="lede">Windshield replacement Indianapolis, rock chip repair, mobile auto glass, double-pane window glass replacement, sliding patio door glass repair, tempered glass, laminated safety glass, commercial storefront glass replacement, and ADAS calibration support.</p>
                 </div>
-                <div class="metric">
-                    <div class="metric__number">1000+</div>
-                    <div class="metric__label">Jobs Completed</div>
+                <div class="industry__grid">
+                    <div class="industry__col">
+                        <h3>Auto glass repair & replacement</h3>
+                        <ul>
+                            <li>Windshield replacement & crack repair near me</li>
+                            <li>Door glass, back glass, quarter glass, vent glass</li>
+                            <li>Rock chip repair before it spreads</li>
+                            <li>ADAS calibration ready after new windshield</li>
+                            <li>Fleet vans, trucks, box trucks, heavy equipment glass</li>
+                        </ul>
+                    </div>
+                    <div class="industry__col">
+                        <h3>Residential & home glass</h3>
+                        <ul>
+                            <li>Window glass replacement for broken or foggy IGUs</li>
+                            <li>Patio sliding door glass, french door glass</li>
+                            <li>Tempered, laminated, Low-E, and energy-efficient glass</li>
+                            <li>Shower glass, mirrors, tabletop glass, cabinet glass</li>
+                            <li>Seal failure, drafts, condensation fixes</li>
+                        </ul>
+                    </div>
+                    <div class="industry__col">
+                        <h3>Commercial & storefront</h3>
+                        <ul>
+                            <li>Storefront glass replacement and door lites</li>
+                            <li>Emergency board-up and same-day safety glass</li>
+                            <li>Office partitions, conference room glass, sneeze guards</li>
+                            <li>Laminated & security glass options</li>
+                            <li>Retail, restaurants, offices, and industrial spaces</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="metric">
-                    <div class="metric__number">100%</div>
-                    <div class="metric__label">Satisfaction Rate</div>
-                </div>
+                <p class="industry__seo">Serving Indianapolis, Carmel, Fishers, Noblesville, Westfield, Greenwood, Zionsville, Plainfield, and surrounding Indiana cities with licensed, insured, and safety-first glass service. We help with insurance claims, provide upfront quotes, and keep you on the road or in your home with clear, secure glass.</p>
             </div>
-            
-            <div class="work-gallery">
-                <div class="work-item">
-                    <div class="work-before-after">
-                        <div class="work-image work-before">
-                            <img src="assets/severe-damage-before.jpg" alt="Severely damaged windshield before professional repair" loading="lazy">
-                            <div class="work-label work-label--before">Before</div>
-                        </div>
-                        <div class="work-image work-after">
-                            <img src="assets/windshield-after-1.jpg" alt="Perfect windshield installation after expert repair" loading="lazy">
-                            <div class="work-label work-label--after">After</div>
-                        </div>
-                    </div>
-                    <div class="work-content">
-                        <h3 class="work-title">Complete Windshield Replacement</h3>
-                        <p class="work-description">Severe impact damage professionally restored to factory specifications. Our expert installation ensures perfect fit, optical clarity, and long-lasting durability.</p>
-                        <div class="work-features">
-                            <span class="feature-tag">✓ OEM Quality Glass</span>
-                            <span class="feature-tag">✓ Lifetime Warranty</span>
-                        </div>
-                    </div>
-                </div>
+        </section>
 
-                <div class="work-item">
-                    <div class="work-before-after">
-                        <div class="work-image work-before">
-                            <img src="assets/windshield-damage-before.jpg" alt="Cracked windshield with spider web damage before repair" loading="lazy">
-                            <div class="work-label work-label--before">Before</div>
-                        </div>
-                        <div class="work-image work-after">
-                            <img src="assets/windshield-after-2.jpg" alt="Flawless windshield replacement completed by professionals" loading="lazy">
-                            <div class="work-label work-label--after">After</div>
-                        </div>
-                    </div>
-                    <div class="work-content">
-                        <h3 class="work-title">Expert Auto Glass Repair</h3>
-                        <p class="work-description">Complex spider web damage transformed through meticulous craftsmanship. Every replacement meets safety standards and aesthetic perfection.</p>
-                        <div class="work-features">
-                            <span class="feature-tag">✓ Safety Certified</span>
-                            <span class="feature-tag">✓ Same Day Service</span>
-                        </div>
-                    </div>
+        <section class="process">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-eyebrow">How it works</p>
+                    <h2>Clear timelines. Zero guesswork.</h2>
                 </div>
-
-                <div class="work-item work-item--single">
-                    <div class="work-showcase">
-                        <img src="assets/windshield-after-3.jpg" alt="Perfect windshield installation showcasing professional quality workmanship" loading="lazy">
-                        <div class="work-label work-label--quality">Quality Results</div>
+                <div class="process__grid">
+                    <div class="process-card">
+                        <span class="process-number">01</span>
+                        <h3>Request</h3>
+                        <p>Share your details, vehicle make/model or window measurements, and photos if available.</p>
                     </div>
-                    <div class="work-content">
-                        <h3 class="work-title">Professional Excellence</h3>
-                        <p class="work-description">Our signature quality finish showcases why Optimum Glass is Indianapolis' premier choice for glass services. Precision, clarity, perfection.</p>
-                        <div class="work-features">
-                            <span class="feature-tag">✓ Premium Materials</span>
-                            <span class="feature-tag">✓ Expert Installation</span>
-                        </div>
+                    <div class="process-card">
+                        <span class="process-number">02</span>
+                        <h3>Confirm</h3>
+                        <p>We verify glass type, coordinate insurance if needed, and schedule mobile or in-shop service.</p>
+                    </div>
+                    <div class="process-card">
+                        <span class="process-number">03</span>
+                        <h3>Install</h3>
+                        <p>Certified techs install with OEM-grade materials, clean up, and provide a lifetime workmanship guarantee.</p>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <div class="work-cta">
-                <button class="btn btn--primary" onclick="openQuoteModal()">
-                    <span>Get Your Free Estimate</span>
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
-                    </svg>
-                </button>
+        <section class="gallery" id="gallery">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-eyebrow">Recent work</p>
+                    <h2>Glass that looks factory fresh.</h2>
+                </div>
+                <div class="gallery__grid">
+                    <figure class="gallery__item">
+                        <img src="assets/IMG_5476.JPEG" alt="Glass repair project by Optimum Glass" loading="lazy">
+                        <figcaption>Windshield & door glass replacements</figcaption>
+                    </figure>
+                    <figure class="gallery__item">
+                        <img src="assets/IMG_5998.JPEG" alt="Residential glass service project" loading="lazy">
+                        <figcaption>Home window glass replacements</figcaption>
+                    </figure>
+                    <figure class="gallery__item">
+                        <img src="assets/IMG_7621.PNG" alt="Optimum Glass technician onsite" loading="lazy">
+                        <figcaption>Mobile service at your driveway or office</figcaption>
+                    </figure>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Testimonials Section -->
-    <section class="testimonials">
-        <div class="container">
-            <div class="section-badge">💬 Customer Reviews</div>
-            <h2 class="testimonials__title">
-                What Our Customers<br>
-                <span class="title-gradient">Are Saying</span>
-            </h2>
-            <div class="testimonials-carousel">
-                <div class="testimonial active">
-                    <div class="testimonial__content">
-                        <div class="testimonial__quote">
-                            "Excellent service! They replaced my windshield quickly and at a great price. The quality of work was outstanding and the customer service was fantastic. Highly recommend Optimum Glass!"
+        <section class="cta" id="quote">
+            <div class="container cta__grid">
+                <div class="cta__content">
+                    <p class="section-eyebrow">Free quote</p>
+                    <h2>Tell us about your auto, home, or commercial glass project.</h2>
+                    <p class="lede">Same-day scheduling for many auto jobs. Next-day for most residential insulated glass orders. We handle insurance paperwork and stand behind every install.</p>
+                    <div class="cta__points">
+                        <span class="chip">Certified glass installation</span>
+                        <span class="chip">Lifetime workmanship guarantee</span>
+                        <span class="chip">Financing available on request</span>
+                    </div>
+                    <div class="cta__contact">
+                        Prefer a call? <a href="tel:+14697945717">(469) 794-5717</a> or email <a href="mailto:info@optimumglasstech.com">info@optimumglasstech.com</a>
+                    </div>
+                </div>
+                <div class="form-card">
+                    <form class="quote-form" id="quoteForm" method="POST" name="glass-quote-request" data-netlify="true" netlify-honeypot="bot-field">
+                        <input type="hidden" name="form-name" value="glass-quote-request">
+                        <div class="honeypot">
+                            <label>Don't fill this out if you're human: <input name="bot-field"></label>
                         </div>
-                        <div class="testimonial__author">
-                            <div class="author__avatar">👨</div>
-                            <div class="author__info">
-                                <div class="author__name">Mike Johnson</div>
-                                <div class="author__event">Auto Glass Replacement</div>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required>
+                                <span class="form-error" id="nameError"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                                <span class="form-error" id="emailError"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                                <span class="form-error" id="phoneError"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="serviceType">Service Needed *</label>
+                                <select id="serviceType" name="serviceType" required>
+                                    <option value="">Select service type</option>
+                                    <option value="Auto Glass Repair">Auto Glass Repair</option>
+                                    <option value="Auto Glass Replacement">Auto Glass Replacement</option>
+                                    <option value="Residential Windows">Residential Windows</option>
+                                    <option value="Patio Door or Shower Glass">Patio Door or Shower Glass</option>
+                                    <option value="Commercial Glass">Commercial Glass</option>
+                                    <option value="Emergency Board Up">Emergency Board Up</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                                <span class="form-error" id="serviceTypeError"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="location">Service Location (city or area)</label>
+                                <input type="text" id="location" name="location" placeholder="Indianapolis, Carmel, Fishers...">
+                            </div>
+                            <div class="form-group">
+                                <label for="vehicleMakeModel">Vehicle Make &amp; Model (if auto)</label>
+                                <input type="text" id="vehicleMakeModel" name="vehicleMakeModel" placeholder="e.g., 2020 Ford F-150">
+                            </div>
+                            <div class="form-group">
+                                <label for="vin">VIN (optional, helps us source glass)</label>
+                                <input type="text" id="vin" name="vin" placeholder="17-character VIN if available">
+                            </div>
+                            <div class="form-group form-group--full">
+                                <label for="message">Project Details</label>
+                                <textarea id="message" name="message" rows="3" placeholder="Tell us about the damage, photos, timing, or insurance info..."></textarea>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="testimonial">
-                    <div class="testimonial__content">
-                        <div class="testimonial__quote">
-                            "Professional, reliable, and affordable! Optimum Glass replaced all the windows in our home office. The team was punctual, clean, and the results exceeded our expectations."
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn--primary">Send request</button>
+                            <p class="form-note">We reply within business hours & often the same day.</p>
                         </div>
-                        <div class="testimonial__author">
-                            <div class="author__avatar">👩</div>
-                            <div class="author__info">
-                                <div class="author__name">Sarah Williams</div>
-                                <div class="author__event">Residential Windows</div>
-                            </div>
-                        </div>
+                    </form>
+                    <div class="quote-success" id="quoteSuccess" style="display: none;">
+                        <div class="quote-success__icon">✓</div>
+                        <h3>Thanks! Your request was received.</h3>
+                        <p>We will follow up within 24 hours (often much sooner) to confirm details and scheduling.</p>
+                        <button class="btn btn--ghost" onclick="openQuoteModal()">Submit another</button>
                     </div>
-                </div>
-                <div class="testimonial">
-                    <div class="testimonial__content">
-                        <div class="testimonial__quote">
-                            "Fast emergency service when our storefront window was damaged. They had us back in business the same day. True professionals who stand behind their work!"
-                        </div>
-                        <div class="testimonial__author">
-                            <div class="author__avatar">🏪</div>
-                            <div class="author__info">
-                                <div class="author__name">David Martinez</div>
-                                <div class="author__event">Commercial Glass Repair</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-controls">
-                    <button class="carousel-btn prev" onclick="changeTestimonial(-1)">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>
-                        </svg>
-                    </button>
-                    <div class="carousel-dots">
-                        <span class="dot active" onclick="currentTestimonial(1)"></span>
-                        <span class="dot" onclick="currentTestimonial(2)"></span>
-                        <span class="dot" onclick="currentTestimonial(3)"></span>
-                    </div>
-                    <button class="carousel-btn next" onclick="changeTestimonial(1)">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
-                        </svg>
-                    </button>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Why Choose Section -->
-    <section class="why-choose">
-        <div class="container">
-            <div class="section-badge">⭐ Why Choose Us</div>
-            <h2 class="why-choose__title">
-                What Makes Us<br>
-                <span class="title-gradient">Different</span>
-            </h2>
-            <div class="why-choose__grid">
-                <div class="feature">
-                    <div class="feature__icon">👨‍👩‍👧‍👦</div>
-                    <h3 class="feature__title">Family Business</h3>
-                    <p class="feature__description">Local family-owned business that treats every customer like family. Personal service you can trust.</p>
+        <section class="faq" id="faq">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-eyebrow">FAQ</p>
+                    <h2>Glass questions we answer every day.</h2>
                 </div>
-                <div class="feature">
-                    <div class="feature__icon">💰</div>
-                    <h3 class="feature__title">Best Prices</h3>
-                    <p class="feature__description">Quality work at the best prices. We provide transparent, competitive pricing with no hidden fees.</p>
-                </div>
-                <div class="feature">
-                    <div class="feature__icon">✅</div>
-                    <h3 class="feature__title">Satisfaction Guaranteed</h3>
-                    <p class="feature__description">We aren't satisfied until our customers are satisfied. Your happiness is our top priority.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <div class="contact__content">
-                <div class="contact__info">
-                    <h2 class="contact__title">Ready to Get Started?</h2>
-                    <p class="contact__description">
-                        Get your free estimate today and experience the Optimum Glass difference!
-                    </p>
-                    <div class="contact__details">
-                        <div class="contact__item">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
-                            </svg>
-                            <a href="tel:+14697945717" class="contact__link">(469) 794-5717</a>
-                        </div>
-                        <div class="contact__item">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-                            </svg>
-                            <a href="mailto:info@optimumglasstech.com" class="contact__link">info@optimumglasstech.com</a>
-                        </div>
-                        <div class="contact__item">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
-                            </svg>
-                            <span>Indianapolis & Surrounding Areas</span>
-                        </div>
+                <div class="faq__grid">
+                    <div class="faq__item">
+                        <h3>Do you help with insurance?</h3>
+                        <p>Yes. We guide you through the claim, confirm coverage, and coordinate billing so you only handle your deductible if needed.</p>
+                    </div>
+                    <div class="faq__item">
+                        <h3>How fast can you replace a windshield?</h3>
+                        <p>Many windshields are in stock for same-day or next-day mobile service. We confirm parts and timing when you request a quote.</p>
+                    </div>
+                    <div class="faq__item">
+                        <h3>Do you service homes and businesses?</h3>
+                        <p>Absolutely. We replace broken or foggy window glass, sliding doors, office glass, storefronts, and perform emergency board-up.</p>
+                    </div>
+                    <div class="faq__item">
+                        <h3>Is your work guaranteed?</h3>
+                        <p>Every install includes a lifetime workmanship guarantee plus manufacturer warranties on glass and materials.</p>
                     </div>
                 </div>
-                <div class="contact__cta">
-                    <button class="btn btn--primary btn--large" onclick="openQuoteModal()">GET FREE ESTIMATE</button>
-                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- Quote Modal -->
-    <div class="modal" id="quoteModal">
-        <div class="modal__overlay" onclick="closeQuoteModal()"></div>
-        <div class="modal__content">
-            <div class="modal__header">
-                <h3 class="modal__title">Request Free Estimate</h3>
-                <button class="modal__close" onclick="closeQuoteModal()" aria-label="Close modal">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
-                    </svg>
-                </button>
-            </div>
-            <form class="quote-form" id="quoteForm" method="POST" name="glass-quote-request" data-netlify="true">
-                <input type="hidden" name="form-name" value="glass-quote-request" />
-                <div class="honeypot">
-                    <label>Don't fill this out if you're human: <input name="bot-field"></label>
-                </div>
-                
-                <div class="form-group">
-                    <label for="name" class="form-label">Full Name *</label>
-                    <input type="text" id="name" name="name" class="form-input" required>
-                    <span class="form-error" id="nameError"></span>
-                </div>
-                
-                <div class="form-group">
-                    <label for="email" class="form-label">Email Address *</label>
-                    <input type="email" id="email" name="email" class="form-input" required>
-                    <span class="form-error" id="emailError"></span>
-                </div>
-                
-                <div class="form-group">
-                    <label for="phone" class="form-label">Phone Number *</label>
-                    <input type="tel" id="phone" name="phone" class="form-input" required>
-                    <span class="form-error" id="phoneError"></span>
-                </div>
-                
-                <div class="form-group">
-                    <label for="serviceType" class="form-label">Service Needed *</label>
-                    <select id="serviceType" name="serviceType" class="form-input" required>
-                        <option value="">Select Service Type</option>
-                        <option value="Auto Glass Repair">Auto Glass Repair</option>
-                        <option value="Auto Glass Replacement">Auto Glass Replacement</option>
-                        <option value="Residential Windows">Residential Windows</option>
-                        <option value="Commercial Glass">Commercial Glass</option>
-                        <option value="Emergency Repair">Emergency Repair</option>
-                        <option value="Other">Other</option>
-                    </select>
-                    <span class="form-error" id="serviceTypeError"></span>
-                </div>
-                
-                <div class="form-group">
-                    <label for="message" class="form-label">Project Details</label>
-                    <textarea id="message" name="message" class="form-input form-textarea" rows="4" placeholder="Please describe your glass service needs..."></textarea>
-                </div>
-                
-                <div class="form-actions">
-                    <button type="button" class="btn btn--secondary" onclick="closeQuoteModal()">Cancel</button>
-                    <button type="submit" class="btn btn--primary">Send Estimate Request</button>
-                </div>
-            </form>
-            
-            <div class="quote-success" id="quoteSuccess" style="display: none;">
-                <div class="quote-success__icon">
-                    <svg width="64" height="64" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                    </svg>
-                </div>
-                <h3 class="quote-success__title">Thank You!</h3>
-                <p class="quote-success__message">Your estimate request has been received. We'll contact you within 24 hours to discuss your glass service needs.</p>
-                <button class="btn btn--primary" onclick="closeQuoteModal()">Close</button>
-            </div>
-        </div>
-    </div>
-
-    <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer__content">
-                <p class="footer__text">&copy; 2024 Optimum Glass Tech. All rights reserved.</p>
-                <p class="footer__text">Serving Indianapolis & Surrounding Areas | Optimize Your View</p>
+        <div class="container footer__inner">
+            <div>
+                <div class="nav__title">Optimum Glass Tech</div>
+                <p>Auto, home, and commercial glass repair across Indianapolis and surrounding areas.</p>
             </div>
+            <div class="footer__contacts">
+                <a href="tel:+14697945717">(469) 794-5717</a>
+                <a href="mailto:info@optimumglasstech.com">info@optimumglasstech.com</a>
+                <span>Indianapolis & Surrounding Areas</span>
+            </div>
+            <div class="footer__legal">© 2024 Optimum Glass Tech. Clear, safe, guaranteed.</div>
         </div>
     </footer>
 
-    <!-- Scripts -->
     <script src="script.js"></script>
-    
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'GA_MEASUREMENT_ID');
-        
-        // Track quote button clicks
-        function trackQuoteClick() {
-            gtag('event', 'estimate_request_started', {
-                event_category: 'engagement',
-                event_label: 'quote_modal_opened'
-            });
-        }
-    </script>
 </body>
 </html>
