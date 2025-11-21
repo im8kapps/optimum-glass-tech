@@ -930,7 +930,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 /* Our Work Section */
 .our-work {
-  padding: var(--space-24) 0;
+  padding: var(--space-16) 0;
   background: linear-gradient(135deg, var(--color-white) 0%, rgba(37, 99, 235, 0.05) 100%);
   position: relative;
 }
@@ -995,8 +995,8 @@ p, h1, h2, h3, h4, h5, h6 {
 .work-gallery {
   display: flex;
   flex-direction: column;
-  gap: var(--space-16);
-  margin-bottom: var(--space-16);
+  gap: var(--space-12);
+  margin-bottom: var(--space-12);
 }
 
 /* Removed grid layout - using single column flex for better image visibility */
@@ -1201,9 +1201,9 @@ p, h1, h2, h3, h4, h5, h6 {
   /* Animation removed */
 }
 
-.work-item:nth-child(1) { animation-delay: 0.1s; opacity: 0; animation-fill-mode: forwards; }
-.work-item:nth-child(2) { animation-delay: 0.2s; opacity: 0; animation-fill-mode: forwards; }
-.work-item:nth-child(3) { animation-delay: 0.3s; opacity: 0; animation-fill-mode: forwards; }
+.work-item:nth-child(1) { opacity: 1; }
+.work-item:nth-child(2) { opacity: 1; }
+.work-item:nth-child(3) { opacity: 1; }
 
 /* Testimonials Section */
 .testimonials {
